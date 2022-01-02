@@ -1,7 +1,5 @@
-import CardContent from "@mui/material/CardContent";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
 import React, { Component } from "react";
 import { Button, CardActionArea, CardActions } from "@mui/material";
 
