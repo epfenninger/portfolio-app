@@ -39,9 +39,9 @@ ReactDOM.render(
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        <Footer className="footer" />
       </Router>
     </div>
+    <Footer />
   </React.StrictMode>,
   document.getElementById("root")
 );
