@@ -61,11 +61,11 @@ class TileGrid extends React.Component {
           container
           rowSpacing={1}
           sx={{ maxWidth: 1800 }}
-          columnSpacing={0.5}
+          columnSpacing={0.3}
           justifyContent="center"
           alignContent="center"
           display="flex"
-          style={{ minHeight: "10vh", minWidth: "50vh", ml: "auto" }}
+          style={{ ml: "auto" }}
           marginLeft="auto"
           marginRight="auto"
         >

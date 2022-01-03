@@ -39,7 +39,7 @@ ReactDOM.render(
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        <Footer />
+        <Footer className="footer" />
       </Router>
     </div>
   </React.StrictMode>,
