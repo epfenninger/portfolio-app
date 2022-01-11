@@ -7,6 +7,10 @@ const footerStyle = {
   height: "3vw",
   maxHeight: "300px",
   align: "center",
+  position: "absolute",
+  bottom: 0,
+  left: 0,
+  right: 0,
 };
 
 const textStyle = {
@@ -22,15 +26,7 @@ const imageStyle = {
 class Footer extends React.Component {
   render() {
     return (
-      <div
-        style={{
-          position: "absolute",
-          left: "0",
-          bottom: "0",
-          right: "0",
-          maxHeight: "30px",
-        }}
-      >
+      <div>
         <Card style={footerStyle}>
           <h5 style={textStyle}>Built by Ethan Pfenninger</h5>
           <CardMedia

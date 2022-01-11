@@ -3,7 +3,7 @@ import CardMedia from "@mui/material/CardMedia";
 import React, { Component } from "react";
 import { Button, CardActionArea, CardActions } from "@mui/material";
 
-class MyTile extends React.Component {
+class MyExperience extends React.Component {
   constructor(props) {
     super(props);
     this.cardMouseLeave = this.cardMouseLeave.bind(this);
@@ -11,13 +11,14 @@ class MyTile extends React.Component {
     this.hoverColor = this.hoverColor.bind(this);
 
     this.state = {
-      img: this.props.img,
+      title: "Default",
+      description: "Default",
+      year: 1993,
       mainColor: "rgba(0, 0, 0, 0)",
       altColor: "rgba(0, 0, 0, .7)",
       elevation: 8,
-      alt: this.props.altText,
       mouseOver: false,
-      tileHeight: "280",
+      tileHeight: "350",
     };
   }
 
@@ -72,4 +73,4 @@ class MyTile extends React.Component {
   }
 }
 
-export default MyTile;
+export default MyExperience;

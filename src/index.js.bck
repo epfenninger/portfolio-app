@@ -1,0 +1,169 @@
+import React, { Component } from "react";
+import { Controller, Scene } from "react-scrollmagic";
+import styled from "styled-components";
+import ReactDOM from "react-dom";
+import "./index.css";
+import TileGrid from "./components/TileGrid";
+import { Tween, Timeline } from "react-gsap";
+import backgroundvideo from "./images/background.mp4";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./components/Home";
+import Footer from "./components/Footer";
+import Contact from "./components/Contact";
+import Experience from "./components/Experience";
+import Resume from "./components/Resume";
+import Portfolio from "./components/Portfolio";
+import NavBar from "./components/navbar";
+
+const IndexStyled = styled.div`
+  overflow: hidden;
+
+  .section {
+    position: relative;
+    height: 0vh;
+    background: #121212;
+    width: 100%;
+  }
+
+  .skills {
+    height: 150vh;
+    width: 100%;
+    background: #121212;
+  }
+
+  .experience {
+    height: 70vh;
+
+    h2 {
+      font-size: 40px;
+      position: absolute;
+      margin: 0;
+      bottom: 10vh;
+      left: 30vh;
+      color: white;
+    }
+  }
+
+  .home {
+    position: absolute
+    background: #121212;
+    margin: auto;
+    width: 50%;
+    }
+
+    .center {
+      margin: auto;
+    }
+
+    .heading {
+      position: absolute;
+      color: white;
+      bottom: 0vh;
+      left: 15vh;
+    
+
+      h2 {
+        font-size: 40px;
+        position: relative;
+        margin: 0;
+        color: white;
+      }
+
+      h4 {
+        font-size: 38px;
+        position: relative;
+        bottom: 10%;
+        left: 100%;
+        margin: 0;
+        color: #673ab7;
+      }
+    }
+
+    .wordcloud {
+      position: absolute;
+      color: #f44336;
+      bottom 25vh;
+      left: 20vh;
+
+      h3 {
+        font-size: 38px;
+        position: relative;
+        bottom: 3vh;
+        left: 15vh;
+        margin: 0;
+        color: #e53935;
+      }
+
+      h4 {
+        font-size: 40px;
+        color: white;
+        bottom: 0vh;
+        left; 15vh;
+        align-content: center;
+      }
+
+      p1 {
+        font-size: 48px;
+        position: relative;
+        margin: 0;
+        color: #ab47bc;
+      }
+
+      p2 {
+        font-size: 48px;
+        position: relative;
+        margin-left: 1em;
+        color: #3f51b5;
+      }
+
+      p3 {
+        font-size: 48px;
+        position: relative;
+        margin-left: 1em;
+        color: #e53935;
+      }
+
+      p4 {
+        font-size: 48px;
+        position: relative;
+        margin-left: 1em;
+        color: #2196f3;
+      }
+
+      p5 {
+        font-size: 48px;
+        position: relative;
+        bottom: 10%;
+        margin-left: 1em;
+        color: #673ab7;
+      }
+
+      p6 {
+        font-size: 48px;
+        position: relative;
+        margin-left: 1em;
+        color: #d1ff33;
+      }
+    }
+  }
+`;
+
+ReactDOM.render(
+  <React.StrictMode>
+    <div className="main">
+      <Router>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/TileGrid" element={<TileGrid />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <Footer className="footer" />
+      </Router>
+    </div>
+  </React.StrictMode>,
+  document.getElementById("root")
+);

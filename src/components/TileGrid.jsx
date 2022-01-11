@@ -5,6 +5,11 @@ import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Divider from "@mui/material/Divider";
 import MyTile from "../components/myTile";
+import styled from "styled-components";
+import { Controller, Scene } from "react-scrollmagic";
+import { Tween, Timeline } from "react-gsap";
+import CurvedArrow from "react-curved-arrow";
+import background from "../images/skills.png";
 
 class TileGrid extends React.Component {
   constructor(props) {
@@ -29,7 +34,8 @@ class TileGrid extends React.Component {
   }
 
   cardText() {
-    if (this.state.cardId === "About Me") return "About me description!";
+    if (this.state.cardId === "About Me")
+      return "About me description! asdfasdfasd;fjasd;lf lasdfjl asdkflja;sdlfj ;alsdfj ;alsdfj ;lasdfj ;lasjf ;lasjf ;lasjf;lasdjf;lkasjdf ;lasdf ;lasdjf ;lkasdjf l;asdjf ;lasdjf asdjflaksdjf ;lasdjf l;asdfj l;as dfj;lasd fja;lfkj ad;fjadf' j cvjklv;kfjadsjk;l asdj ;lafdsjkl; asdf;ljkads f ;ljaclvnlax;cnva;lsknfa;lsdkfh asdlfj asd;lfja;sdlfj";
     if (this.state.cardId === "Python") return "Python Experience";
     if (this.state.cardId === "Java") return "Java";
     if (this.state.cardId === "About Me") return "About Me";
@@ -44,168 +50,159 @@ class TileGrid extends React.Component {
 
   render() {
     return (
-      <div style={{ marginLeft: "auto" }}>
-        <Divider />
-        <Card elevation={8} style={{ backgroundColor: "rgba(0, 0, 0, 1)" }}>
-          <CardContent>
-            <Typography sx={{ fontSize: 14 }} color="#fff" gutterBottom>
-              {this.cardTitle()}
-            </Typography>
-            <Typography variant="body2" color="rgba(255, 255, 255, .8)">
-              {this.cardText()}
-            </Typography>
-          </CardContent>
-        </Card>
-        <Divider />
+      <div className="skills">
         <Grid
+          className="tilegrid"
           container
-          rowSpacing={1}
-          sx={{ maxWidth: 1800 }}
-          columnSpacing={0.3}
+          direction="row"
+          sx={{ maxWidth: "80%" }}
+          columnSpacing={1}
+          rowSpacing={3}
           justifyContent="center"
           alignContent="center"
           display="flex"
-          style={{ ml: "auto" }}
-          marginLeft="auto"
           marginRight="auto"
+          marginLeft="auto"
         >
-          <Grid item xs={1.5}>
-            <MyTile
-              img={require("../images/me.jpg")}
-              altText="About Me"
-              clickHandler={this.handleClick}
-            ></MyTile>
+          <Grid item xs={12}>
+            <Card
+              elevation={8}
+              style={{
+                backgroundColor: "rgba(0, 0, 0, .7)",
+                width: "80vw",
+                height: "20vh",
+                alignContent: "center",
+                justifyContent: "center",
+                marginLeft: "auto",
+                marginRight: "auto",
+              }}
+            >
+              <CardContent>
+                <Typography sx={{ fontSize: 14 }} color="#fff" gutterBottom>
+                  {this.cardTitle()}
+                </Typography>
+                <Typography variant="body2" color="rgba(255, 255, 255, .8)">
+                  {this.cardText()}
+                </Typography>
+              </CardContent>
+            </Card>
           </Grid>
-          <Grid item xs={1.5}>
+          <Grid item xs={2}>
             <MyTile
               img={require("../images/python.png")}
               altText="Python"
               clickHandler={this.handleClick}
-            ></MyTile>
+            />
           </Grid>
-          <Grid item xs={1.5}>
+          <Grid item xs={2}>
             <MyTile
               img={require("../images/java.png")}
               altText="Java"
               clickHandler={this.handleClick}
-            ></MyTile>
+            />
           </Grid>
-          <Grid item xs={1.5}>
+          <Grid item xs={2}>
             <MyTile
               img={require("../images/bash.png")}
               altText="Bash"
               clickHandler={this.handleClick}
-            ></MyTile>
+            />
           </Grid>
-          <Grid item xs={1.5}>
+          <Grid item xs={2}>
             <MyTile
               img={require("../images/react-javascript.png")}
               altText="React-Javascript"
               clickHandler={this.handleClick}
             ></MyTile>
           </Grid>
-          <Grid item xs={1.5}>
+          <Grid item xs={2}>
             <MyTile
               img={require("../images/tf.png")}
               altText="Tensorflow"
               clickHandler={this.handleClick}
             ></MyTile>
           </Grid>
-          <Grid item xs={1.5}>
-            <MyTile
-              img={require("../images/addie.png")}
-              altText="Addie"
-              clickHandler={this.handleClick}
-            ></MyTile>
-          </Grid>
-          <Grid item xs={1.5}>
-            <MyTile
-              img={require("../images/ld.png")}
-              altText="Learning and Development"
-              clickHandler={this.handleClick}
-            ></MyTile>
-          </Grid>
-          <Grid item xs={1.5}>
-            <MyTile
-              img={require("../images/api.png")}
-              altText="API"
-              clickHandler={this.handleClick}
-            ></MyTile>
-          </Grid>
-          <Grid item xs={1.5}>
-            <MyTile
-              img={require("../images/camtasia.png")}
-              altText="Camtasia"
-              clickHandler={this.handleClick}
-            ></MyTile>
-          </Grid>
-          <Grid item xs={1.5}>
-            <MyTile
-              img={require("../images/google.png")}
-              altText="Google"
-              clickHandler={this.handleClick}
-            ></MyTile>
-          </Grid>
-          <Grid item xs={1.5}>
-            <MyTile
-              img={require("../images/lms.png")}
-              altText="LMS"
-              clickHandler={this.handleClick}
-            ></MyTile>
-          </Grid>
-          <Grid item xs={1.5}>
-            <MyTile
-              img={require("../images/da.png")}
-              altText="Data Analytics"
-              clickHandler={this.handleClick}
-            ></MyTile>
-          </Grid>
-          <Grid item xs={1.5}>
-            <MyTile
-              img={require("../images/gcp.png")}
-              altText="Google Cloud Platform"
-              clickHandler={this.handleClick}
-            ></MyTile>
-          </Grid>
-          <Grid item xs={1.5}>
-            <MyTile
-              img={require("../images/microsoft.png")}
-              altText="Windows"
-              clickHandler={this.handleClick}
-            ></MyTile>
-          </Grid>
-          <Grid item xs={1.5}>
-            <MyTile
-              img={require("../images/project.png")}
-              altText="Project Management"
-              clickHandler={this.handleClick}
-            ></MyTile>
-          </Grid>
-          <Grid item xs={1.5}>
-            <MyTile
-              img={require("../images/osx.png")}
-              altText="OSX"
-              clickHandler={this.handleClick}
-            ></MyTile>
-          </Grid>
-          <Grid item xs={1.5}>
+          <Grid item xs={2}>
             <MyTile
               img={require("../images/sql.png")}
               altText="SQL"
               clickHandler={this.handleClick}
             ></MyTile>
           </Grid>
-          <Grid item xs={1.5}>
+          <Grid item xs={2}>
             <MyTile
-              img={require("../images/windows.png")}
-              altText="Windows"
+              img={require("../images/api.png")}
+              altText="API"
               clickHandler={this.handleClick}
             ></MyTile>
           </Grid>
-          <Grid item xs={1.5}>
+          <Grid item xs={2}>
             <MyTile
               img={require("../images/javascript.png")}
               altText="Javascript"
+              clickHandler={this.handleClick}
+            ></MyTile>
+          </Grid>
+          <Grid item xs={2}>
+            <MyTile
+              img={require("../images/lms.png")}
+              altText="LMS"
+              clickHandler={this.handleClick}
+            ></MyTile>
+          </Grid>
+          <Grid item xs={2}>
+            <MyTile
+              img={require("../images/ld.png")}
+              altText="Learning and Development"
+              clickHandler={this.handleClick}
+            ></MyTile>
+          </Grid>
+          <Grid item xs={2}>
+            <MyTile
+              img={require("../images/da.png")}
+              altText="Data Analytics"
+              clickHandler={this.handleClick}
+            ></MyTile>
+          </Grid>
+          <Grid item xs={2}>
+            <MyTile
+              img={require("../images/gcp.png")}
+              altText="Google Cloud Platform"
+              clickHandler={this.handleClick}
+            ></MyTile>
+          </Grid>
+          <Grid item xs={2}>
+            <MyTile
+              img={require("../images/camtasia.png")}
+              altText="Camtasia"
+              clickHandler={this.handleClick}
+            ></MyTile>
+          </Grid>
+          <Grid item xs={2}>
+            <MyTile
+              img={require("../images/project.png")}
+              altText="Project Management"
+              clickHandler={this.handleClick}
+            ></MyTile>
+          </Grid>
+          <Grid item xs={2}>
+            <MyTile
+              img={require("../images/google.png")}
+              altText="Google"
+              clickHandler={this.handleClick}
+            ></MyTile>
+          </Grid>
+          <Grid item xs={2}>
+            <MyTile
+              img={require("../images/osx.png")}
+              altText="OSX"
+              clickHandler={this.handleClick}
+            ></MyTile>
+          </Grid>
+          <Grid item xs={2}>
+            <MyTile
+              img={require("../images/windows.png")}
+              altText="Windows"
               clickHandler={this.handleClick}
             ></MyTile>
           </Grid>

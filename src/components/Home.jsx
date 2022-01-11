@@ -1,61 +1,79 @@
-import React, { Component } from "react";
+// @flow
+import React from "react";
+import { Controller, Scene } from "react-scrollmagic";
+import { Tween, Timeline } from "react-gsap";
 import Card from "@mui/material/Card";
-import ReactTextRotator from "react-text-rotator";
+import CardMedia from "@mui/material/CardMedia";
+import { Typewriter } from "typewriting-react";
 
-const content = [
-  {
-    text: "Educator",
-    className: "classA",
-    animation: "fade",
+const styles = {
+  card: {
+    position: "relative",
+    top: "-47vh",
   },
-  {
-    text: "Developer",
-    className: "classB",
-    animation: "fade",
+  overlay: {
+    position: "absolute",
+    top: "-1vh",
+    left: "3vw",
+    width: "80vw",
+    maxHeight: "40vh",
   },
-  {
-    text: "Instructional Designer",
-    className: "classC",
-    animation: "fade",
+  header: {
+    fontSize: "2.2vw",
+    font: "arial",
+    color: "white",
+    marginBottom: "-1vh",
   },
-  {
-    text: "Mentor",
-    className: "classD",
-    animation: "fade",
+  header2: {
+    fontSize: "2.3vw",
+    font: "arial",
+    marginLeft: "4vw",
+    color: "white",
+    display: "inline-block",
   },
-  {
-    text: "Learner",
-    className: "classE",
-    animation: "fade",
+  desc: {
+    fontSize: "2.4vw",
+    font: "arial",
+    color: "#8bc34a",
+    marginLeft: ".7vw",
+    display: "inline-block",
   },
-];
-
-const cardStyle = {
-  display: "block",
-  width: "100%",
-  transitionDuration: "0.3s",
-  height: "45vw",
-  backgroundColor: "rgba(0, 0, 0, .3)",
 };
 
-class Home extends React.Component {
-  render() {
-    return (
-      <div>
-        <Card style={cardStyle} elevation={8}>
-          <h1 marginLeft="10vh">
-            Hi, I'm Ethan! I'm a(n){" "}
-            <ReactTextRotator
-              content={content}
-              time={2000}
-              startDelay={500}
-              transitionTime={200}
-            />
-          </h1>
-        </Card>
+const words = [
+  "an instructional designer.",
+  "a data analyst.",
+  "a LMS manager.",
+  "a developer.",
+  "a lifelong learner.",
+];
+
+const Home = () => (
+  <div className="home">
+    <card style={styles.card} elevation={8}>
+      <CardMedia
+        style={{
+          width: "100vw",
+          height: "40vh",
+          objectFit: "cover",
+          marginLeft: "auto",
+          marginRight: "auto",
+        }}
+        component="img"
+        image={require("../images/backgroundhomecomputer.png")}
+        alt="Test"
+      />
+      <div style={styles.overlay}>
+        <h2 style={styles.header}>
+          Hey! I'm Ethan. Here is what you should know about me:
+        </h2>
+        <h2 style={styles.header2}>I'm </h2>
+        <h2 style={styles.desc}>
+          <Typewriter words={words} />
+        </h2>
       </div>
-    );
-  }
-}
+    </card>
+  </div>
+);
 
 export default Home;
