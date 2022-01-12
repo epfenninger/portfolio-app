@@ -3,13 +3,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
-import Divider from "@mui/material/Divider";
 import MyTile from "../components/myTile";
-import styled from "styled-components";
-import { Controller, Scene } from "react-scrollmagic";
-import { Tween, Timeline } from "react-gsap";
-import CurvedArrow from "react-curved-arrow";
-import background from "../images/skills.png";
 
 class TileGrid extends React.Component {
   constructor(props) {

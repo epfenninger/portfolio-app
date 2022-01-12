@@ -25,7 +25,7 @@ const SectionWipesStyled = styled.div`
   .panel span {
     position: relative;
     overflow: visible;
-    top: 50%;
+    top: 30%;
   }
 
   .navbar.navbartext {
@@ -38,7 +38,7 @@ const SectionWipesStyled = styled.div`
   }
 
   .panel.home {
-    background-color: #121212;
+    background-color: #212121;
   }
 
   .panel.tilegrid {
@@ -47,23 +47,27 @@ const SectionWipesStyled = styled.div`
 
     .skills {
       position: relative;
-      top: -40vh;
+      top: -20vh;
     }
   }
 
   .panel.experience {
-    background-color: #eeeeee;
-    height: 110vh;
+    background-color: #212121;
+
+    .experience {
+      position: relative;
+      top -20vh;
+    }
   }
 
   .panel.portfolio {
-    background-color: #616161;
-    height: 110vh;
+    background-color: #212121;
+
   }
 
   .panel.contact {
-    background-color: #3b3b3b;
-    height: 110vh;
+    background-color: #212121;
+
   }
 `;
 
