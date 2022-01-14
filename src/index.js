@@ -48,6 +48,7 @@ const SectionWipesStyled = styled.div`
     .skills {
       position: relative;
       top: -20vh;
+      color: #ffffff;
     }
   }
 
@@ -57,6 +58,8 @@ const SectionWipesStyled = styled.div`
     .experience {
       position: relative;
       top -20vh;
+
+     
     }
   }
 
