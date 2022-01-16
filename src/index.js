@@ -18,7 +18,6 @@ import NavBar from "./components/navbar";
 const SectionWipesStyled = styled.div`
   overflow: hidden;
   .panel {
-    height: 100vh;
     width: 100%;
   }
 
@@ -48,9 +47,10 @@ const SectionWipesStyled = styled.div`
     height: 70vh;
 
     .skills {
-      position: relative;
-      top: -20vh;
+      position: absolute;
       color: #ffffff;
+      z-index: 1;
+      bottom: 5vh;
     }
   }
 
@@ -81,6 +81,7 @@ const SectionWipesStyled = styled.div`
 
   .panel.contact {
     background-color: #cfd8dc;
+    height: 100vh;
   }
 `;
 
@@ -98,9 +99,7 @@ ReactDOM.render(
         </Scene>
         <Scene>
           <div className="panel tilegrid">
-            <span>
-              <TileGrid />
-            </span>
+            <TileGrid />
           </div>
         </Scene>
         <Scene pin>
