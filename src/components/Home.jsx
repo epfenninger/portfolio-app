@@ -13,26 +13,26 @@ const styles = {
   },
   overlay: {
     position: "absolute",
-    top: "-1vh",
+    top: "4vh",
     left: "3vw",
     width: "80vw",
     maxHeight: "40vh",
   },
   header: {
-    fontSize: "2.2vw",
+    fontSize: "2.8vw",
     font: "arial",
     color: "white",
     marginBottom: "-1vh",
   },
   header2: {
-    fontSize: "2.3vw",
+    fontSize: "2.8vw",
     font: "arial",
     marginLeft: "4vw",
-    color: "white",
+    color: "#8bc34a",
     display: "inline-block",
   },
   desc: {
-    fontSize: "2.4vw",
+    fontSize: "2.9vw",
     font: "arial",
     color: "#8bc34a",
     marginLeft: ".7vw",
@@ -54,7 +54,7 @@ const Home = () => (
       <CardMedia
         style={{
           width: "100vw",
-          height: "40vh",
+          height: "50vh",
           objectFit: "cover",
           marginLeft: "auto",
           marginRight: "auto",
@@ -64,9 +64,7 @@ const Home = () => (
         alt="Test"
       />
       <div style={styles.overlay}>
-        <h2 style={styles.header}>
-          Hey! I'm Ethan. Here is what you should know about me:
-        </h2>
+        <h2 style={styles.header}>Hey! I'm Ethan. Nice to meet you. </h2>
         <h2 style={styles.header2}>I'm </h2>
         <h2 style={styles.desc}>
           <Typewriter words={words} />

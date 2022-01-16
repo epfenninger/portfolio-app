@@ -8,6 +8,18 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import { borderBottom } from "@mui/system";
 
+function filterPortfolio(item) {
+  console.log("filter Called");
+  let newData = [];
+  content.forEach((element) => {
+    console.log(element.type.length);
+    if (element.type.toLowerCase() === item.toLowerCase()) {
+      newData.push(element);
+    }
+  });
+  return newData;
+}
+
 class Experience extends React.Component {
   constructor(props) {
     super(props);
@@ -18,49 +30,36 @@ class Experience extends React.Component {
 
     this.handleChange = this.handleChange.bind(this);
     this.expItems = this.expItems.bind(this);
+    this.expItems("Experience");
   }
 
-  async componentDidMount() {
-    this.setState({ data: "" });
-    let d = await content;
-    this.setState({ data: content });
-  }
-
-  expItems() {
-    let newData = [];
-    if (content.length > 0) {
-      content.forEach((element) => {
-        if (element.Type.toLowerCase === this.state.select.toLowerCase) {
-          console.log("Element " + element.Type);
-          console.log("Selected " + this.state.select);
-          newData.push(element);
-        }
-      });
-    }
-    return newData.map((item) => (
+  expItems(value) {
+    this.setState({ select: value });
+    let filtered = filterPortfolio(value);
+    this.state.data = filtered.map((item) => (
       <ExperienceCard
         title={item.title}
-        subheader={item.subheader}
+        header={item.header}
         mainContent={item.mainContent}
         subContent={item.subContent}
+        imgSrc={item.imgSrc}
       />
     ));
   }
 
   handleChange(event) {
-    this.setState({ select: event.target.value });
-    this.expItems();
+    this.expItems(event.target.value);
     this.render();
   }
 
   render() {
     return (
       <div className="experience">
-        <div className="select" style={{ display: "inline-block" }}>
-          <h2> Show me your: </h2>
+        <div className="select">
+          <h2> See My: </h2>
           <FormControl
             variant="standard"
-            sx={{ m: 3, minWidth: "12vw" }}
+            sx={{ m: 3, minWidth: "13vw" }}
             size="large"
           >
             <Select
@@ -71,18 +70,18 @@ class Experience extends React.Component {
               defaultValue="Experience"
               style={{
                 color: "white",
-                fontSize: "1.7vw",
+                fontSize: "2.5vw",
                 borderBottomColor: "white",
                 fill: "white",
               }}
             >
-              <MenuItem value={"Experience"}>Experience</MenuItem>
-              <MenuItem value={"Education"}>Education</MenuItem>
-              <MenuItem value={"Certifications"}>Certifications</MenuItem>
+              <MenuItem value="Experience">Experience</MenuItem>
+              <MenuItem value="Education">Education</MenuItem>
+              <MenuItem value="Certifications">Certifications</MenuItem>
             </Select>
           </FormControl>
         </div>
-        {this.expItems()}
+        {this.state.data}
       </div>
     );
   }

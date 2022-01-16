@@ -24,26 +24,25 @@ const SectionWipesStyled = styled.div`
 
   .panel span {
     position: relative;
-    overflow: visible;
+    overflow: hidden;
     top: 30%;
   }
+  .panel.navbar {
+    height: 26vh;
 
-  .navbar.navbartext {
-  margin: "1rem",
-  textDecoration: "none",
-  color: "white",
-  fontWeight: "bold",
-  variant: "outlined",
-  fontSize: "1.3vw",
+    @navbutton {
+      color: white;
+    }
   }
 
   .panel.home {
     background-color: #212121;
+    height: 30vh;
   }
 
   .panel.tilegrid {
     background-color: #212121;
-    height: 110vh;
+    height: 70vh;
 
     .skills {
       position: relative;
@@ -54,34 +53,41 @@ const SectionWipesStyled = styled.div`
 
   .panel.experience {
     background-color: #212121;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
 
-    .experience {
-      position: relative;
-      top -20vh;
-
-     
+    .select {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      color: white;
+      font-size: 1.8vw;
+      align-items: center;
+      font-weight: bold;
     }
   }
 
   .panel.portfolio {
     background-color: #212121;
-
+    height: 100vh;
   }
 
   .panel.contact {
     background-color: #212121;
-
   }
 `;
 
 ReactDOM.render(
   <React.StrictMode>
     <SectionWipesStyled>
+      <div className="panel navbar">
+        <NavBar />
+      </div>
       <Controller globalSceneOptions={{ triggerHook: "onLeave" }}>
-        <div className="navbar">
-          <NavBar />
-        </div>
-
         <Scene pin>
           <div className="panel home">
             <span>
@@ -98,9 +104,7 @@ ReactDOM.render(
         </Scene>
         <Scene pin>
           <div className="panel experience">
-            <span>
-              <Experience />
-            </span>
+            <Experience />
           </div>
         </Scene>
         <Scene pin>

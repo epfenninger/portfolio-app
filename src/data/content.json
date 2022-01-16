@@ -1,26 +1,32 @@
 [
   {
-    "Type": "education",
-    "Date": 2022,
+    "type": "education",
+    "date": 2022,
     "title": "M.Ed in Educational Technology and Curriculum Design",
-    "subheader": "Expected May 2022",
-    "maincontent": "maincontent!!",
-    "subcontent": "maincontent!!"
+    "header": "Expected May 2022",
+    "mainContent": "Framingham State University MainContent",
+    "subContent": "I did this, and that, and also this, and also that, totallly this too!",
+    "altText": "Framingham State",
+    "imgSrc": "https://d28htnjz2elwuj.cloudfront.net/wp-content/uploads/2019/04/11144614/Framingham-State-University-400x400.jpg"
   },
   {
-    "Type": "experience",
-    "Date": 2019,
+    "type": "experience",
+    "date": 2019,
     "title": "Alton Central School - Technology Integrationist",
-    "subheader": "June 2019 - Present",
-    "maincontent": "Technology Integrationist and Computer Science teacher for Alton Central School, a K-8 Elementary. Responsible for all technology professional development and administration of online resources.",
-    "subcontent": "maincontent!!"
+    "header": "June 2019 - Present",
+    "mainContent": "Technology Integrationist and Computer Science teacher for Alton Central School, a K-8 Elementary. Responsible for all technology professional development and administration of online resources.",
+    "subContent": "This thing, and that thin, also this thing, and that thing, totally this too",
+    "altText": "ACS",
+    "imgSrc": "http://www.myacs.org/pics/DISA_LOGO.gif"
   },
   {
-    "Type": "portfolio",
-    "Date": "",
-    "title": "Performing Data Analysis on Uncooperative Channels",
-    "subheader": "An Excercise in Python and Data Analysis",
-    "maincontent": "maincontent!!",
-    "subcontent": "Subcontent!"
+    "type": "Certifications",
+    "date": 2022,
+    "title": "Google Project Management Professional",
+    "header": "June 2022",
+    "mainContent": "",
+    "subContent": "",
+    "altText": "",
+    "imgSrc": ""
   }
 ]

@@ -1,0 +1,104 @@
+[
+  {
+    "cardId": "Python",
+    "title": "Python Experience",
+    "para1": "I've been programming in Python for over eight years, though only recently did I start uploading my projects to Github. Most of my work has been in the automation of application integration, and I have several projects leveraging Python to work with JSON data, APIs, and other third party applications like Discord. I use Python for all of my data analytics work, and lean on NumPy and Pandas for quick data engineering.",
+    "para2": "Projects built using Python include: Reverse engineering protocols with Renogy and Modbus, Integrating Object Detection with BlueIris and Tensorflow, and Data Analysis of Resource Use"
+  },
+  {
+    "cardId": "Java",
+    "title": "Java Experience",
+    "para1": "I taught the AP Computer Science course (Java based) for two years and built out a large collection of project-based learning problems for my students to engage with. While I don't use Java for personal projects (I'd rather use Python or Javascript) having to handwrite code and debug student's algorithms with them has left me with a strong understanding of the language.",
+    "para2": ""
+  },
+  {
+    "cardId": "Bash",
+    "title": "Bash Experience",
+    "para1": "My primary use of Bash has been the management of UNIX-based servers and OSX Mobile Device Management. Everywhere I impemented MDM I built out a library of bash scripts that could be leveraged to increase the capability of our systems and get us to a zero-touch deployment for OSX.",
+    "para2": ""
+  },
+  {
+    "cardId": "ReactJS",
+    "title": "ReactJS Experience",
+    "para1": "ReactJS is my newest language and I'm already seeing the capabilities of the integration with Javascript.",
+    "para2": "I have one project built using ReactJS - this website! Check it out in my portfolio section (you're also using it right now!)"
+  },
+  {
+    "cardId": "Tensorflow",
+    "title": "Tensorflow-Lite",
+    "para1": "A few years ago my wife got fed up with the numerous motion-based false positives from our NVR system. We had transitioned from Nest and missed the object detection capabilities, but weren't keen on using cloud-based systems for sensitive data. I ended up building a system using Tensorflow-lite that runs locally, integrates with our NVR and Home-automation system, and cut down false positives significantly.",
+    "para2": ""
+  },
+  {
+    "cardId": "SQL",
+    "title": "SQL Experience",
+    "para1": "para 1",
+    "para2": "para 2"
+  },
+  {
+    "cardId": "API",
+    "title": "API Experience",
+    "para1": "para 2",
+    "para2": "para 3"
+  },
+  {
+    "cardId": "Javascript",
+    "title": "Javascript Experience",
+    "para1": "para 3",
+    "para2": "para 4"
+  },
+  {
+    "cardId": "LMS",
+    "title": "Learning Management Systems",
+    "para1": "para 4",
+    "para2": "para 5"
+  },
+  {
+    "cardId": "Learning and Development",
+    "title": "Learning and Development / Instructional Design",
+    "para1": "para 5",
+    "para2": "para 6"
+  },
+  {
+    "cardId": "DataAnalytics",
+    "title": "Data Analytics / Data Engineering",
+    "para1": "para 6",
+    "para2": "para 7"
+  },
+  {
+    "cardId": "GCP",
+    "title": "Google Cloud Platform",
+    "para1": "para 7",
+    "para2": "para 8"
+  },
+  {
+    "cardId": "Camtasia",
+    "title": "Camtasia",
+    "para1": "para 8",
+    "para2": "para 9"
+  },
+  {
+    "cardId": "Project Management",
+    "title": "Project Management",
+    "para1": "para 9",
+    "para2": "para 10"
+  },
+  {
+    "cardId": "Google",
+    "title": "G-Suite Management / Skills",
+    "para1": "para 10",
+    "para2": "para 11"
+  },
+  {
+    "cardId": "OSX",
+    "title": "OSX / iOS Management",
+    "para1": "para 11",
+    "para2": "para 12"
+  },
+  {
+    "cardId": "Windows",
+    "title": "Windows Management",
+    "para1": "para 12",
+    "para2": "para 13"
+  }
+]

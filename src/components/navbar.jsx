@@ -3,54 +3,47 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import { Link } from "react-scroll";
+import { Link, animateScroll } from "react-scroll";
+import Button from "@mui/material/Button";
+import Stack from "@mui/material/Stack";
+import styled from "styled-components";
+import { withTheme } from "@emotion/react";
+
+const buttonStyle = {
+  color: "white",
+  fontSize: "1.2vw",
+  justify: "center",
+  textAlign: "center",
+  marginTop: "auto",
+  marginBottom: "auto",
+};
 
 class NavBar extends React.Component {
   render() {
     return (
-      <Box sx={{ flexGrow: 1, height: "8vh" }}>
-        <AppBar position="static" color="transparent">
+      <Box sx={{ flexGrow: 1, height: "8vh" }} display="table">
+        <AppBar position="static" sticky="top" top="0" color="transparent">
           <Toolbar>
-            <Typography
-              variant="h5"
-              component="div"
-              sx={{ flexGrow: 1 }}
-              color="white"
-              fontSize="1.3vw"
-            >
-              <ul
-                style={{
-                  display: "flex",
-                  listStyle: "none",
-                  justifyContent: "center",
-                }}
-              >
-                <li>
+            <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
+              <div className="navbartext">
+                <Stack direction="row" spacing={2}>
                   <Link activeClass="active" to="home" spy={true} smooth={true}>
-                    Home
+                    <Button style={buttonStyle}>Home</Button>
                   </Link>
-                </li>
-                <li>
-                  <Link to="tilegrid" spy={true} smooth={true}>
-                    About
+                  <Link to="tilegrid" spy={true} smooth={true} offset={50}>
+                    <Button style={buttonStyle}> Skills</Button>
                   </Link>
-                </li>
-                <li>
                   <Link to="experience" spy={true} smooth={true}>
-                    Experience
+                    <Button style={buttonStyle}>Experience</Button>
                   </Link>
-                </li>
-                <li>
                   <Link to="portfolio" spy={true} smooth={true}>
-                    Portfolio
+                    <Button style={buttonStyle}>Home</Button>
                   </Link>
-                </li>
-                <li>
                   <Link to="contact" spy={true} smooth={true}>
-                    Contact
+                    <Button style={buttonStyle}>Contact Me</Button>
                   </Link>
-                </li>
-              </ul>
+                </Stack>
+              </div>
             </Typography>
           </Toolbar>
         </AppBar>

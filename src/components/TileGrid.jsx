@@ -4,6 +4,7 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import MyTile from "../components/myTile";
+import skills from "../data/skills.json";
 
 class TileGrid extends React.Component {
   constructor(props) {
@@ -18,28 +19,47 @@ class TileGrid extends React.Component {
   }
 
   cardTitle() {
-    if (this.state.cardId === "About Me") return "About Me";
-    if (this.state.cardId === "Python") return "Python Experience";
-    if (this.state.cardId === "Java") return "Java";
-    if (this.state.cardId === "About Me") return "About Me";
-    if (this.state.cardId === "About Me") return "About Me";
-
-    return "Not About me";
+    let title = "";
+    skills.forEach((element) => {
+      if (element.cardId === this.state.cardId) {
+        console.log(element.title.toString());
+        title = element.title.toString();
+      }
+    });
+    return title;
   }
 
   cardText() {
-    if (this.state.cardId === "About Me")
-      return "About me description! asdfasdfasd;fjasd;lf lasdfjl asdkflja;sdlfj ;alsdfj ;alsdfj ;lasdfj ;lasjf ;lasjf ;lasjf;lasdjf;lkasjdf ;lasdf ;lasdjf ;lkasdjf l;asdjf ;lasdjf asdjflaksdjf ;lasdjf l;asdfj l;as dfj;lasd fja;lfkj ad;fjadf' j cvjklv;kfjadsjk;l asdj ;lafdsjkl; asdf;ljkads f ;ljaclvnlax;cnva;lsknfa;lsdkfh asdlfj asd;lfja;sdlfj";
-    if (this.state.cardId === "Python") return "Python Experience";
-    if (this.state.cardId === "Java") return "Java";
-    if (this.state.cardId === "About Me") return "About Me";
-    if (this.state.cardId === "About Me") return "About Me";
+    let cardText1 = "";
+    let cardText2 = "";
+    skills.forEach((element) => {
+      if (element.cardId === this.state.cardId) {
+        cardText1 = element.para1;
+        cardText2 = element.para2;
+      }
+    });
+    return (
+      <div>
+        {cardText1}
+        <br></br>
+        <br />
+        {cardText2}
+      </div>
+    );
   }
 
   handleClick(info) {
     if (info.target.alt !== this.state.cardId)
       this.setState({ cardId: info.target.alt });
-    this.render();
+    this.cardTitle();
+    this.cardText();
+  }
+
+  componentDidUpdate(prevState) {
+    if (prevState.cardId !== this.state.cardId) {
+      console.log("rendering!");
+      this.render();
+    }
   }
 
   render() {
@@ -72,10 +92,14 @@ class TileGrid extends React.Component {
               }}
             >
               <CardContent>
-                <Typography sx={{ fontSize: 14 }} color="#fff" gutterBottom>
+                <Typography
+                  sx={{ fontSize: "1.8vw" }}
+                  color="#fff"
+                  gutterBottom
+                >
                   {this.cardTitle()}
                 </Typography>
-                <Typography variant="body2" color="rgba(255, 255, 255, .8)">
+                <Typography variant="body1 " color="rgba(255, 255, 255, .8)">
                   {this.cardText()}
                 </Typography>
               </CardContent>
@@ -105,7 +129,7 @@ class TileGrid extends React.Component {
           <Grid item xs={2}>
             <MyTile
               img={require("../images/react-javascript.png")}
-              altText="React-Javascript"
+              altText="ReactJS"
               clickHandler={this.handleClick}
             ></MyTile>
           </Grid>
@@ -147,21 +171,21 @@ class TileGrid extends React.Component {
           <Grid item xs={2}>
             <MyTile
               img={require("../images/ld.png")}
-              altText="Learning and Development"
+              altText="LandD"
               clickHandler={this.handleClick}
             ></MyTile>
           </Grid>
           <Grid item xs={2}>
             <MyTile
               img={require("../images/da.png")}
-              altText="Data Analytics"
+              altText="DataAnalytics"
               clickHandler={this.handleClick}
             ></MyTile>
           </Grid>
           <Grid item xs={2}>
             <MyTile
               img={require("../images/gcp.png")}
-              altText="Google Cloud Platform"
+              altText="GCP"
               clickHandler={this.handleClick}
             ></MyTile>
           </Grid>

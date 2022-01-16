@@ -25,9 +25,12 @@ const ExpandMore = styled((props) => {
 
 export default function ExperienceCard({
   title,
-  subheader,
+  header,
   mainContent,
+  subContentHeader,
   subContent,
+  altText,
+  imgSrc,
 }) {
   const [expanded, setExpanded] = React.useState(false);
 
@@ -38,13 +41,9 @@ export default function ExperienceCard({
   return (
     <Card sx={{ maxWidth: 425 }}>
       <CardHeader
-        avatar={
-          <Avatar sx={{ bgcolor: blue[700] }} aria-label="Experience">
-            ACS
-          </Avatar>
-        }
+        avatar={<Avatar alt={altText} src={imgSrc} />}
         title={title}
-        subheader={subheader}
+        subheader={header}
       />
       <CardContent>
         <Typography variant="body2" color="text.secondary">
@@ -63,7 +62,7 @@ export default function ExperienceCard({
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography paragraph>Achievements:</Typography>
+          <Typography paragraph>{subContentHeader}</Typography>
           <Typography paragraph>{subContent}</Typography>
         </CardContent>
       </Collapse>
