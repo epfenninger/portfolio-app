@@ -30,7 +30,7 @@ class NavBar extends React.Component {
                   <Link activeClass="active" to="home" spy={true} smooth={true}>
                     <Button style={buttonStyle}>Home</Button>
                   </Link>
-                  <Link to="tilegrid" spy={true} smooth={true} offset={"-55vh"}>
+                  <Link to="tilegrid" spy={true} smooth={true} offset={-100}>
                     <Button style={buttonStyle}> Skills</Button>
                   </Link>
                   <Link to="experience" spy={true} smooth={true}>

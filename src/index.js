@@ -50,7 +50,7 @@ const SectionWipesStyled = styled.div`
       position: absolute;
       color: #ffffff;
       z-index: 1;
-      bottom: 5vh;
+      bottom: 0vh;
     }
   }
 
