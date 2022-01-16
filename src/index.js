@@ -28,7 +28,12 @@ const SectionWipesStyled = styled.div`
     top: 30%;
   }
   .panel.navbar {
-    height: 26vh;
+    position: fixed;
+    height: 0vh;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
 
     @navbutton {
       color: white;
@@ -36,12 +41,10 @@ const SectionWipesStyled = styled.div`
   }
 
   .panel.home {
-    background-color: #212121;
-    height: 30vh;
+    height: 40vh;
   }
 
   .panel.tilegrid {
-    background-color: #212121;
     height: 70vh;
 
     .skills {
@@ -52,7 +55,7 @@ const SectionWipesStyled = styled.div`
   }
 
   .panel.experience {
-    background-color: #212121;
+    background-color: #cfd8dc;
     height: 70vh;
     display: flex;
     flex-direction: row;
@@ -72,12 +75,12 @@ const SectionWipesStyled = styled.div`
   }
 
   .panel.portfolio {
-    background-color: #212121;
+    background-color: #cfd8dc;
     height: 100vh;
   }
 
   .panel.contact {
-    background-color: #212121;
+    background-color: #cfd8dc;
   }
 `;
 
@@ -88,14 +91,12 @@ ReactDOM.render(
         <NavBar />
       </div>
       <Controller globalSceneOptions={{ triggerHook: "onLeave" }}>
-        <Scene pin>
+        <Scene pin="FALSE">
           <div className="panel home">
-            <span>
-              <Home />
-            </span>
+            <Home />
           </div>
         </Scene>
-        <Scene pin>
+        <Scene>
           <div className="panel tilegrid">
             <span>
               <TileGrid />

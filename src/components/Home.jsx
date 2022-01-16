@@ -9,7 +9,7 @@ import { Typewriter } from "typewriting-react";
 const styles = {
   card: {
     position: "relative",
-    top: "-30vh",
+    top: "0vh",
   },
   overlay: {
     position: "absolute",

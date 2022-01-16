@@ -82,7 +82,7 @@ class TileGrid extends React.Component {
             <Card
               elevation={8}
               style={{
-                backgroundColor: "rgba(0, 0, 0, .7)",
+                backgroundColor: "rgba(0, 0, 0, .9)",
                 width: "80vw",
                 height: "20vh",
                 alignContent: "center",

@@ -22,7 +22,7 @@ class NavBar extends React.Component {
   render() {
     return (
       <Box sx={{ flexGrow: 1, height: "8vh" }} display="table">
-        <AppBar position="static" sticky="top" top="0" color="transparent">
+        <AppBar color="transparent">
           <Toolbar>
             <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
               <div className="navbartext">
