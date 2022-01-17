@@ -165,7 +165,7 @@ class TileGrid extends React.Component {
           </Grid>
           <Grid item xs={2}>
             <MyTile
-              img={require("../images/lms.png")}
+              img={require("../images/LMS.png")}
               altText="LMS"
               clickHandler={this.handleClick}
             ></MyTile>
@@ -173,7 +173,7 @@ class TileGrid extends React.Component {
           <Grid item xs={2}>
             <MyTile
               img={require("../images/ld.png")}
-              altText="LandD"
+              altText="L+D"
               clickHandler={this.handleClick}
             ></MyTile>
           </Grid>
