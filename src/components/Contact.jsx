@@ -62,7 +62,7 @@ const Contact = () => {
         direction="column"
         rowSpacing={5}
         position="relative"
-        top="-10vh"
+        top="20vh"
       >
         <Grid item>
           <h1 style={{ fontSize: "2.8vw" }}>
@@ -129,6 +129,16 @@ const Contact = () => {
               </Button>
             </DialogActions>
           </Dialog>
+        </Grid>
+        <Grid item>
+          <a href="http://www.linkedin.com/in/epfenninger">
+            <img
+              src={require("../images/linkedIn.png")}
+              a
+              href="www.linkedin.com/in/epfenninger"
+              height={"50vh"}
+            />
+          </a>
         </Grid>
       </Grid>
     </form>
