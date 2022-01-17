@@ -41,6 +41,7 @@ class Experience extends React.Component {
         title={item.title}
         header={item.header}
         mainContent={item.mainContent}
+        subContentHeader={item.subContentHeader}
         subContent={item.subContent}
         imgSrc={item.imgSrc}
       />
@@ -56,7 +57,7 @@ class Experience extends React.Component {
     return (
       <div className="experience">
         <div className="select">
-          <h2> See My: </h2>
+          <h2> See My </h2>
           <FormControl
             variant="standard"
             sx={{ m: 3, minWidth: "13vw" }}
@@ -69,15 +70,15 @@ class Experience extends React.Component {
               onChange={this.handleChange}
               defaultValue="Experience"
               style={{
-                color: "white",
+                color: "black",
                 fontSize: "2.5vw",
-                borderBottomColor: "white",
-                fill: "white",
+                borderBottomColor: "black",
+                fill: "black",
               }}
             >
               <MenuItem value="Experience">Experience</MenuItem>
               <MenuItem value="Education">Education</MenuItem>
-              <MenuItem value="Certifications">Certifications</MenuItem>
+              <MenuItem value="Certificate">Certifications</MenuItem>
             </Select>
           </FormControl>
         </div>
