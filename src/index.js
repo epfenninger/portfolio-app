@@ -77,6 +77,10 @@ const SectionWipesStyled = styled.div`
   .panel.portfolio {
     background-color: #cfd8dc;
     height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .panel.contact {
@@ -109,9 +113,7 @@ ReactDOM.render(
         </Scene>
         <Scene pin>
           <div className="panel portfolio">
-            <span>
-              <Portfolio />
-            </span>
+            <Portfolio />
           </div>
         </Scene>
         <Scene pin>

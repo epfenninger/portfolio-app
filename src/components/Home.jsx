@@ -43,9 +43,10 @@ const styles = {
 const words = [
   "an instructional designer.",
   "a data analyst.",
+  "a system admin.",
   "a LMS manager.",
   "a developer.",
-  "a lifelong learner.",
+  "a problem solver.",
 ];
 
 const Home = () => (

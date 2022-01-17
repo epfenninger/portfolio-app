@@ -37,7 +37,7 @@ class NavBar extends React.Component {
                     <Button style={buttonStyle}>Experience</Button>
                   </Link>
                   <Link to="portfolio" spy={true} smooth={true}>
-                    <Button style={buttonStyle}>Home</Button>
+                    <Button style={buttonStyle}>Portfolio</Button>
                   </Link>
                   <Link to="contact" spy={true} smooth={true}>
                     <Button style={buttonStyle}>Contact Me</Button>

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Card from "@mui/material/Card";
+import { Card, CardMedia } from "@mui/material";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
@@ -19,7 +19,7 @@ class TileGrid extends React.Component {
   }
 
   cardTitle() {
-    let title = "";
+    let title = "About Me";
     skills.forEach((element) => {
       if (element.cardId === this.state.cardId) {
         console.log(element.title.toString());
@@ -30,8 +30,9 @@ class TileGrid extends React.Component {
   }
 
   cardText() {
-    let cardText1 = "";
-    let cardText2 = "";
+    let cardText1 =
+      "For the past seven years, I've been working various roles in the education. Because of this, and my own passion projects, I've accumulated a wide variety of skills. In my most recent position, I've been responsible for all technical Learning & Development, LMS Administration, and Data Analytics. Having previous experience with G-Suite and Systems Administration via MDM, I mentor our IT department in OSX/Windows Administration as well as maintaining our G-Suite environment.";
+    let cardText2 = "Click the items below to learn more.";
     skills.forEach((element) => {
       if (element.cardId === this.state.cardId) {
         cardText1 = element.para1;
@@ -49,6 +50,7 @@ class TileGrid extends React.Component {
   }
 
   handleClick(info) {
+    if (info.target.alt == undefined) return null;
     if (info.target.alt !== this.state.cardId)
       this.setState({ cardId: info.target.alt });
     this.cardTitle();
