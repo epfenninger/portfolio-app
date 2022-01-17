@@ -13,7 +13,19 @@ import {
   CardActions,
 } from "@mui/material";
 
-export default function PortfolioCard({ title, content, altText, imgSrc }) {
+export default function PortfolioCard({
+  title,
+  content,
+  altText,
+  imgSrc,
+  textColor,
+  skills,
+  iFrameVideo,
+  iFrameWidth,
+  iFrameHeight,
+  iFrameAllow,
+  imgFit,
+}) {
   const [open, setOpen] = React.useState(false);
   const [scroll, setScroll] = React.useState("paper");
 
@@ -36,13 +48,40 @@ export default function PortfolioCard({ title, content, altText, imgSrc }) {
     }
   }, [open]);
 
+  let topElement = "";
+
+  if (iFrameVideo !== undefined) {
+    console.log(iFrameVideo);
+    topElement = (
+      <iframe
+        width={iFrameWidth}
+        height={iFrameHeight}
+        src={iFrameVideo}
+        allow={iFrameAllow}
+        allowFullScreen
+      />
+    );
+  }
+
   return (
     <div>
       <Card>
         <CardActionArea onClick={handleClickOpen("paper")}>
+          <h2
+            style={{
+              position: "absolute",
+              color: textColor,
+              top: "0vh",
+              textShadow: "1px black",
+              marginLeft: "1vw",
+              fontSize: "1em",
+            }}
+          >
+            {skills}
+          </h2>
           <CardMedia
             style={{
-              objectFit: "cover",
+              objectFit: imgFit,
               height: "20vh",
               width: "100%",
               margin: "auto",
@@ -54,9 +93,9 @@ export default function PortfolioCard({ title, content, altText, imgSrc }) {
           <h2
             style={{
               position: "absolute",
-              color: "white",
-              bottom: "0vh",
-              textShadow: "1px black",
+              color: textColor,
+              bottom: "-1vh",
+              textShadow: "3px black",
               marginLeft: "1vw",
             }}
           >
@@ -75,13 +114,8 @@ export default function PortfolioCard({ title, content, altText, imgSrc }) {
       >
         <DialogTitle id="scroll-dialog-title">{title}</DialogTitle>
         <DialogContent dividers={scroll === "paper"}>
-          <DialogContentText
-            id="scroll-dialog-description"
-            ref={descriptionElementRef}
-            tabIndex={-1}
-          >
-            {content}
-          </DialogContentText>
+          {topElement}
+          <h2>{content}</h2>
         </DialogContent>
       </Dialog>
     </div>
