@@ -33,6 +33,7 @@ const SectionWipesStyled = styled.div`
   }
 
   .panel.home {
+    height: 40vh;
   }
 
   .panel.tilegrid {
