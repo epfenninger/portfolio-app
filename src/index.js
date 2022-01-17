@@ -22,8 +22,6 @@ const SectionWipesStyled = styled.div`
     top: 30%;
   }
   .panel.navbar {
-    position: fixed;
-    height: 0vh;
     z-index: 1;
     top: 0;
     width: 100%;
@@ -35,7 +33,6 @@ const SectionWipesStyled = styled.div`
   }
 
   .panel.home {
-    height: 40vh;
   }
 
   .panel.tilegrid {
@@ -101,17 +98,17 @@ ReactDOM.render(
             <TileGrid />
           </div>
         </Scene>
-        <Scene pin>
+        <Scene pin="FALSE">
           <div className="panel experience">
             <Experience />
           </div>
         </Scene>
-        <Scene pin>
+        <Scene pin="FALSE">
           <div className="panel portfolio">
             <Portfolio />
           </div>
         </Scene>
-        <Scene pin>
+        <Scene pin="FALSE">
           <div className="panel contact">
             <Contact />
           </div>

@@ -19,7 +19,7 @@ const buttonStyle = {
 class NavBar extends React.Component {
   render() {
     return (
-      <Box sx={{ flexGrow: 1, height: "8vh" }} display="table">
+      <Box sx={{ flexGrow: 1 }} display="table">
         <AppBar color="transparent">
           <Toolbar>
             <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
