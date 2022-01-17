@@ -4,12 +4,9 @@ import styled from "styled-components";
 import ReactDOM from "react-dom";
 import "./index.css";
 import TileGrid from "./components/TileGrid";
-
 import Home from "./components/Home";
-
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
-
 import Portfolio from "./components/Portfolio";
 import NavBar from "./components/navbar";
 
