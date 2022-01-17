@@ -5,6 +5,7 @@
     "title": "M.Ed in Educational Technology and Curriculum Design",
     "header": "Expected May 2022",
     "mainContent": "Framingham State University MainContent",
+    "subContentHeader": "Major Points of Study:",
     "subContent": "I did this, and that, and also this, and also that, totallly this too!",
     "altText": "Framingham State",
     "imgSrc": "https://d28htnjz2elwuj.cloudfront.net/wp-content/uploads/2019/04/11144614/Framingham-State-University-400x400.jpg"
@@ -15,18 +16,31 @@
     "title": "Alton Central School - Technology Integrationist",
     "header": "June 2019 - Present",
     "mainContent": "Technology Integrationist and Computer Science teacher for Alton Central School, a K-8 Elementary. Responsible for all technology professional development and administration of online resources.",
+    "subContentHeader": "Achievements:",
     "subContent": "This thing, and that thin, also this thing, and that thing, totally this too",
     "altText": "ACS",
     "imgSrc": "http://www.myacs.org/pics/DISA_LOGO.gif"
   },
   {
-    "type": "Certifications",
+    "type": "Certificate",
     "date": 2022,
     "title": "Google Project Management Professional",
     "header": "June 2022",
-    "mainContent": "",
-    "subContent": "",
-    "altText": "",
-    "imgSrc": ""
+    "mainContent": "https://www.credly.com/earner/earned/badge/9bfb7909-a168-46da-bc1f-adeaa0449e2b",
+    "subContentHeader": "Highlights:",
+    "subContent": "Those who earn the Google Project Management Certificate have completed six courses, developed by Google, that include hands-on, practice-based assessments and are designed to prepare them for introductory-level roles in Project Management. They are competent in initiating, planning and running both traditional and agile projects.",
+    "altText": "Google Credly Certificate",
+    "imgSrc": "https://images.credly.com/size/340x340/images/771cff46-3573-4d12-bfd8-528745f00957/GCC_badge_PGM_1000x1000.png"
+  },
+  {
+    "type": "Certificate",
+    "date": 2022,
+    "title": "Google Data Analytics Professional",
+    "header": "Expected January 2022",
+    "mainContent": "https://www.credly.com/org/coursera/badge/google-data-analytics-certificate.2",
+    "subContentHeader": "Highlights:",
+    "subContent": "Those who earn the Google Data Analytics Certificate have completed eight courses, developed by Google, that include hands-on, practice-based assessments and are designed to prepare them for introductory-level roles in Data Analytics. They are competent in tools and platforms including spreadsheets, SQL, Tableau, and R. They know how to prepare, process, analyze, and share data for thoughtful action.",
+    "altText": "Google Credly Certificate",
+    "imgSrc": "https://images.credly.com/images/d41de2b7-cbc2-47ec-bcf1-ebecbe83872f/GCC_badge_DA_1000x1000.png"
   }
 ]
