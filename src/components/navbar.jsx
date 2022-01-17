@@ -6,8 +6,6 @@ import Typography from "@mui/material/Typography";
 import { Link, animateScroll } from "react-scroll";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
-import styled from "styled-components";
-import { withTheme } from "@emotion/react";
 
 const buttonStyle = {
   color: "white",
@@ -33,7 +31,13 @@ class NavBar extends React.Component {
                   <Link to="tilegrid" spy={true} smooth={true} offset={-100}>
                     <Button style={buttonStyle}> Skills</Button>
                   </Link>
-                  <Link to="experience" spy={true} smooth={true}>
+                  <Link
+                    to="experience"
+                    spy={true}
+                    smooth={true}
+                    offset={-600}
+                    isDynamic={true}
+                  >
                     <Button style={buttonStyle}>Experience</Button>
                   </Link>
                   <Link to="portfolio" spy={true} smooth={true}>
