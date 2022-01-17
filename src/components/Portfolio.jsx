@@ -1,7 +1,6 @@
 import * as React from "react";
 import PortfolioCard from "./PortfolioCard";
-import Grid from "@mui/material/Grid";
-import contact from "../data/content.json";
+import { Grid, Card, CardActionArea, CardMedia } from "@mui/material";
 
 class Portfolio extends React.Component {
   state = {};
@@ -19,7 +18,7 @@ class Portfolio extends React.Component {
         display="flex"
         marginRight="auto"
         marginLeft="auto"
-        bottom="10vh"
+        bottom="00vh"
         position="relative"
       >
         <Grid item xs={12}>
@@ -125,13 +124,78 @@ class Portfolio extends React.Component {
           />
         </Grid>
         <Grid item xs={4}>
-          <PortfolioCard
-            title=""
-            skills="Everything"
-            imgSrc={require("../images/github.png")}
-            content={<img src={require("../images/tensorflow_lite.png")} />}
-            textColor={"black"}
-          />
+          <a href="https://github.com/epfenninger/portfolio-app">
+            <Card>
+              <CardActionArea>
+                <h2
+                  style={{
+                    position: "absolute",
+                    color: "white",
+                    top: "0vh",
+                    textShadow: "1px black",
+                    marginLeft: "1vw",
+                    fontSize: "1em",
+                  }}
+                >
+                  ReactJS, Javascript, Web Design
+                </h2>
+                <CardMedia
+                  style={{
+                    objectFit: "",
+                    height: "20vh",
+                    width: "100%",
+                    margin: "auto",
+                  }}
+                  component="img"
+                  image={require("../images/website.png")}
+                  alt=""
+                />
+                <h2
+                  style={{
+                    position: "absolute",
+                    color: "white",
+                    bottom: "0vh",
+                    textShadow: "1px black",
+                    marginLeft: "1vw",
+                    fontSize: "2em",
+                  }}
+                >
+                  This Website
+                </h2>
+              </CardActionArea>
+            </Card>
+          </a>
+        </Grid>
+        <Grid item xs={4}>
+          <a href="https://github.com/epfenninger">
+            <Card>
+              <CardActionArea>
+                <h2
+                  style={{
+                    position: "absolute",
+                    color: "black",
+                    top: "0vh",
+                    textShadow: "1px black",
+                    marginLeft: "1vw",
+                    fontSize: "1em",
+                  }}
+                >
+                  Everything
+                </h2>
+                <CardMedia
+                  style={{
+                    objectFit: "",
+                    height: "20vh",
+                    width: "100%",
+                    margin: "auto",
+                  }}
+                  component="img"
+                  image={require("../images/github.png")}
+                  alt=""
+                />
+              </CardActionArea>
+            </Card>
+          </a>
         </Grid>
       </Grid>
     );

@@ -1,25 +1,25 @@
 [
   {
     "cardId": "Python",
-    "title": "Python Experience",
+    "title": "Python",
     "para1": "I've been programming in Python for over eight years, though only recently did I start uploading my projects to Github. Most of my work has been in the automation of application integration, and I have several projects leveraging Python to work with JSON data, APIs, and other third party applications like Discord. I use Python for all of my data analytics work, and lean on NumPy and Pandas for quick data engineering.",
     "para2": "Projects built using Python include: Reverse engineering protocols with Renogy and Modbus, Integrating Object Detection with BlueIris and Tensorflow, and Data Analysis of Resource Use"
   },
   {
     "cardId": "Java",
-    "title": "Java Experience",
+    "title": "Javascript Experience",
     "para1": "I taught the AP Computer Science course (Java based) for two years and built out a large collection of project-based learning problems for my students to engage with. While I don't use Java for personal projects (I'd rather use Python or Javascript) having to handwrite code and debug student's algorithms with them has left me with a strong understanding of the language.",
     "para2": ""
   },
   {
     "cardId": "Bash",
-    "title": "Bash Experience",
+    "title": "Bash",
     "para1": "My primary use of Bash has been the management of UNIX-based servers and OSX Mobile Device Management. Everywhere I impemented MDM I built out a library of bash scripts that could be leveraged to increase the capability of our systems and get us to a zero-touch deployment for OSX.",
     "para2": ""
   },
   {
     "cardId": "ReactJS",
-    "title": "ReactJS Experience",
+    "title": "ReactJS",
     "para1": "ReactJS is my newest language and I'm already seeing the capabilities of the integration with Javascript.",
     "para2": "I have one project built using ReactJS - this website! Check it out in my portfolio section (you're also using it right now!)"
   },
@@ -31,74 +31,80 @@
   },
   {
     "cardId": "SQL",
-    "title": "SQL Experience",
-    "para1": "para 1",
-    "para2": "para 2"
+    "title": "SQL",
+    "para1": "I've used SQL primarily when interfacing with Google Query, using it to go beyond the limitations of basic spreadsheet functions to build live and responsive G-Suite applications. I've also been required to use it in the Google Data Analytics course that I'm currently enrolled in.",
+    "para2": ""
   },
   {
     "cardId": "API",
-    "title": "API Experience",
-    "para1": "para 2",
-    "para2": "para 3"
+    "title": "API (Restful + Non-Restful)",
+    "para1": "I've utilized both Restful and Non-restful (I feel like restless sounds good but isn't technically correct) APIs when performing data analytics, and integrating services. Several of the resources our school uses requires a manual CSV, and it is far easier to use the API from our LMS/SIS to run a live data transfer when needed.",
+    "para2": "Check out data analytics on undocumented APIs, as well as my research into Modbus and Tensorflow integration"
   },
   {
     "cardId": "Javascript",
-    "title": "Javascript Experience",
-    "para1": "para 3",
-    "para2": "para 4"
+    "title": "Javascript",
+    "para1": "I've used Javascript primarily when writing with Google Apps script to automate and leverage Google's integration into our systems. Everything from automatically printing reports to writing an entire ePortfolio system leveraging Google Sites, Forms, Sheets, and Drive with live reporting and automatic file handling.",
+    "para2": "Check out Google Apps Script item in portfolios"
   },
   {
     "cardId": "LMS",
     "title": "Learning Management Systems",
-    "para1": "para 4",
-    "para2": "para 5"
+    "para1": "I've used multiple Learning Management Systems (in education these are also tied to a Student Information System) and have leveraged my ability with APIs, Data Analytics, and scripting to give insight into student learning, perform rostering, and automatically integrate third party systems. We currently use Google Classroom, and while it lacks a lot of the complexities an ordinary LMS has, Google's API gives you full control and lets me automate and pull data much like a regular LMS.",
+    "para2": ""
   },
   {
     "cardId": "L+D",
     "title": "Learning and Development / Instructional Design",
-    "para1": "para 5",
-    "para2": "para 6"
+    "para1": "I have been responsible for all technical L&D for the past five years, and started getting into the role while working in IT. These responsibilities have seen me performing regular microtrainings, building eLearning curricula for employee technical upskilling, and doing live trainings on complicated technical concepts. Additionally my experience teaching students as young as fifth grade how to program has taught me how to take very technical concepts and convey them through multiple methods.",
+    "para2": "I have experience with Bloom, Kirkpatrick, and other learning Taxonomies and use tools like Camtasia regularly to deliver them. Check out my portfolio for L&D items."
   },
   {
     "cardId": "DataAnalytics",
     "title": "Data Analytics / Data Engineering",
-    "para1": "para 6",
-    "para2": "para 7"
+    "para1": "I had to take a break from the Google Data Analytics certificate to finish this portfolio, but should be able to finish it quickly once I resume. Data Analytics has been at the core of what I do. I got into L&D after realizing that a significant number of my IT support tickets could be resolved through the availability of employee training. After I moved into an L&D role full time, I've used data to identify hole in institutional knowledge and where upskilling will help achieve organizational goals.",
+    "para2": "Check out the Data Analytics items in my portfolio!"
   },
   {
     "cardId": "GCP",
     "title": "Google Cloud Platform",
-    "para1": "para 7",
-    "para2": "para 8"
+    "para1": "I've continually used GCP to offload items requiring physical servers to micro-instances reducing both our costs, complexity, and downtime.",
+    "para2": ""
   },
   {
     "cardId": "Camtasia",
     "title": "Camtasia",
-    "para1": "para 8",
-    "para2": "para 9"
+    "para1": "I use both Camtasia and Screenflow to perform microtrainings, educational videos, and build parts of eLearning curricula. I'll often throw a Gif in an email or set of instructions to emphasize a step and make directions easier to follow.",
+    "para2": "Check out the quick microlearning I made on how to integrate Google Domains with a Google Portfolio Site!"
   },
   {
     "cardId": "Project Management",
     "title": "Project Management",
-    "para1": "para 9",
-    "para2": "para 10"
+    "para1": "I have the Google Project Management Professional Certificate (check out certificates below) and have been using Agile in both my Educational practices and while helping our IT department.",
+    "para2": "After Covid, we had a complete turnover in our IT department and I stepped in to train the new department in our resources and provide mentoring in their application."
   },
   {
     "cardId": "Google",
     "title": "G-Suite Management / Skills",
-    "para1": "para 10",
-    "para2": "para 11"
+    "para1": "I currently help administer our G-Suite workspace and am well versed in all parts of administration and implementation. I've also built out a large set of scripts using GAM to automate services (like reporting) and integrate G-Suite into our various systems.",
+    "para2": ""
   },
   {
     "cardId": "OSX",
     "title": "OSX / iOS Management",
-    "para1": "para 11",
-    "para2": "para 12"
+    "para1": "I have implemented OSX/iOS MDM in two different institutions, and currently do all administration of profiles. Where our MDM falls short, I've used Bash to allow for touchless deployments and complete customization.",
+    "para2": ""
   },
   {
     "cardId": "Windows",
     "title": "Windows Management",
-    "para1": "para 12",
-    "para2": "para 13"
+    "para1": "I have administered and migrated Active Directory installs, and integrated them with our MDM and Open Directory solutions to encompass our entire fleet of systems. I have a working knowldge of Powershell to help our deployment.",
+    "para2": ""
+  },
+  {
+    "cardId": "Me",
+    "title": "More About Me!",
+    "para1": "I live in the Lakes Region of New Hampshire with my wife and our two dogs. I'm an avid cyclist, hiker, and hobbyist who enjoys being outside and building things. If I'm not out on my bike, I'm probably working on our van conversion (check it out in the portfolio!) or volunteering as a member of NH Search and Rescue.",
+    "para2": ""
   }
 ]

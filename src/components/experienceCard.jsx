@@ -50,14 +50,14 @@ export default function ExperienceCard({
     setExpanded(!expanded);
   };
   return (
-    <Card sx={{ maxWidth: 425 }}>
+    <Card sx={{ maxWidth: 425 }} style={{ marginBottom: "3vh" }}>
       <CardHeader
         avatar={<Avatar alt={altText} src={imgSrc} />}
         title={title}
         subheader={header}
       />
       <CardContent>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="headline5" color="text.secondary">
           {mainContent}
         </Typography>
       </CardContent>
@@ -73,8 +73,8 @@ export default function ExperienceCard({
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography paragraph>{subContentHeader}</Typography>
-          <Typography>{listItem}</Typography>
+          <Typography variant="headline6">{subContentHeader}</Typography>
+          <Typography variant="body2">{listItem}</Typography>
         </CardContent>
       </Collapse>
     </Card>

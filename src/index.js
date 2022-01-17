@@ -51,7 +51,7 @@ const SectionWipesStyled = styled.div`
 
   .panel.experience {
     background-color: #cfd8dc;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
