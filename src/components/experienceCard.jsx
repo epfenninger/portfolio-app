@@ -8,7 +8,6 @@ import Collapse from "@mui/material/Collapse";
 import Avatar from "@mui/material/Avatar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import { blue } from "@mui/material/colors";
 
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
@@ -33,11 +32,23 @@ export default function ExperienceCard({
   imgSrc,
 }) {
   const [expanded, setExpanded] = React.useState(false);
+  let listItem = subContent;
 
+  if (subContentHeader !== "Highlights:") {
+    listItem = (
+      <ul>
+        {subContent
+          .toString()
+          .split(",")
+          .map((item) => (
+            <li>{item}</li>
+          ))}
+      </ul>
+    );
+  }
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
-
   return (
     <Card sx={{ maxWidth: 425 }}>
       <CardHeader
@@ -63,7 +74,7 @@ export default function ExperienceCard({
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           <Typography paragraph>{subContentHeader}</Typography>
-          <Typography paragraph>{subContent}</Typography>
+          <Typography>{listItem}</Typography>
         </CardContent>
       </Collapse>
     </Card>
