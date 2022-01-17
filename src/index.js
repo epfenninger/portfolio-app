@@ -4,14 +4,12 @@ import styled from "styled-components";
 import ReactDOM from "react-dom";
 import "./index.css";
 import TileGrid from "./components/TileGrid";
-import { Tween, Timeline } from "react-gsap";
-import backgroundvideo from "./images/background.mp4";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 import Home from "./components/Home";
-import Footer from "./components/Footer";
+
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
-import Resume from "./components/Resume";
+
 import Portfolio from "./components/Portfolio";
 import NavBar from "./components/navbar";
 
@@ -50,13 +48,13 @@ const SectionWipesStyled = styled.div`
       position: absolute;
       color: #ffffff;
       z-index: 1;
-      bottom: 0vh;
+      bottom: -0.8vh;
     }
   }
 
   .panel.experience {
     background-color: #cfd8dc;
-    height: 70vh;
+    height: 80vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -67,7 +65,7 @@ const SectionWipesStyled = styled.div`
       display: flex;
       flex-direction: row;
       justify-content: center;
-      color: white;
+      color: black;
       font-size: 1.8vw;
       align-items: center;
       font-weight: bold;
@@ -85,7 +83,7 @@ const SectionWipesStyled = styled.div`
 
   .panel.contact {
     background-color: #cfd8dc;
-    height: 100vh;
+    height: 110vh;
   }
 `;
 
@@ -118,9 +116,7 @@ ReactDOM.render(
         </Scene>
         <Scene pin>
           <div className="panel contact">
-            <span>
-              <Contact />
-            </span>
+            <Contact />
           </div>
         </Scene>
       </Controller>
