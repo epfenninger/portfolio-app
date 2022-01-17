@@ -226,6 +226,13 @@ class TileGrid extends React.Component {
               clickHandler={this.handleClick}
             ></MyTile>
           </Grid>
+          <Grid item xs={2}>
+            <MyTile
+              img={require("../images/me.jpg")}
+              altText="Me"
+              clickHandler={this.handleClick}
+            ></MyTile>
+          </Grid>
         </Grid>
       </div>
     );
