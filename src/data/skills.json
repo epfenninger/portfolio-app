@@ -50,7 +50,7 @@
   {
     "cardId": "LMS",
     "title": "Learning Management Systems",
-    "para1": "I've used multiple Learning Management Systems (in education these are also tied to a Student Information System) and have leveraged my ability with APIs, Data Analytics, and scripting to give insight into student learning, perform rostering, and automatically integrate third party systems. We currently use Google Classroom, and while it lacks a lot of the complexities an ordinary LMS has, Google's API gives you full control and lets me automate and pull data much like a regular LMS.",
+    "para1": "I've used multiple Learning Management Systems (in education these are also tied to a Student Information System) and have leveraged my ability with APIs, Data Analytics, and scripting to give insight into student learning, perform rostering, and automatically integrate third party systems. ",
     "para2": ""
   },
   {
