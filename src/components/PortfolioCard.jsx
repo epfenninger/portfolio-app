@@ -20,6 +20,7 @@ export default function PortfolioCard({
   imgSrc,
   textColor,
   skills,
+  contentPicture,
   iFrameVideo,
   iFrameWidth,
   iFrameHeight,
@@ -51,7 +52,6 @@ export default function PortfolioCard({
   let topElement = "";
 
   if (iFrameVideo !== undefined) {
-    console.log(iFrameVideo);
     topElement = (
       <iframe
         width={iFrameWidth}
@@ -59,6 +59,17 @@ export default function PortfolioCard({
         src={iFrameVideo}
         allow={iFrameAllow}
         allowFullScreen
+        style={{ display: "flex", margin: "auto" }}
+      />
+    );
+  }
+
+  if (contentPicture !== undefined) {
+    topElement = (
+      <img
+        src={contentPicture}
+        style={{ display: "flex", margin: "auto" }}
+        width="1000px"
       />
     );
   }
@@ -115,7 +126,7 @@ export default function PortfolioCard({
         <DialogTitle id="scroll-dialog-title">{title}</DialogTitle>
         <DialogContent dividers={scroll === "paper"}>
           {topElement}
-          <h2>{content}</h2>
+          <h2 style={{ whiteSpace: "pre-line" }}>{content}</h2>
         </DialogContent>
       </Dialog>
     </div>
