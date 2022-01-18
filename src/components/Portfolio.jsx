@@ -38,7 +38,7 @@ class Portfolio extends React.Component {
             title="Risk Assessment when Winter Hiking in the White Mountains"
             skills="Captivate, L&D"
             imgSrc={require("../images/riskassessment.jpg")}
-            content={<img src={require("../images/tensorflow_lite.png")} />}
+            content="Under Construction!"
             textColor={"#FFFFFF"}
           />
         </Grid>
@@ -47,7 +47,7 @@ class Portfolio extends React.Component {
             title="Comparing SCORM and xAPI"
             skills="L&D, API, Camtasia"
             imgSrc={require("../images/scormxapi.png")}
-            content={<img src={require("../images/tensorflow_lite.png")} />}
+            content="Under Construction"
             textColor={"black"}
           />
         </Grid>
@@ -56,7 +56,7 @@ class Portfolio extends React.Component {
             title="Integrating Tensorflow Object detection via API"
             skills="API, ML, Python"
             imgSrc={require("../images/tensorflow_lite.png")}
-            content=""
+            content="Under Construction!"
             textColor={"black"}
             imgFit={"scale-down"}
           />
@@ -82,7 +82,26 @@ class Portfolio extends React.Component {
             title="Running Data Analysis utilizing an undocumented API"
             skills="API, Data Analysis, Python"
             imgSrc={require("../images/DataAnalysis.jpg")}
-            content={<img src={require("../images/tensorflow_lite.png")} />}
+            contentPicture={require("../images/DataAnalysis.jpg")}
+            content={`One of the challenges I have as a Technology Integrationist is
+              staying on top of the two dozen(ish) online technology resources
+              that we offer teachers.
+              
+              I was recently asked to gather some
+              quantitative data on how much these technology resources are being
+              used to see if we could trim the software budget. This was also a
+              great chance to get more data on technology usage in the classroom
+              to better target future micro-trainings.
+              
+              The issue with data collection here is that many of these resources offer their own means of presenting use. Going through each to collate data would've been time-consuming, and some didn't even have any form of accessible data.
+
+              Like many schools, we have a filter on the student's Chromebooks. This allowed me to see what students accessed a specific resource on a given date and download this information as a CSV.
+
+Which still sounded like a pain and was time-consuming enough that it wouldn't allow me to collect real-time data. Without a public-facing API, I couldn't easily automate, but I knew that if I could get the info out with my Browser, I could figure this out.
+
+So - time to break out the Python, NumPy, and the Google Inspector tool. After a little creative sleuthing, I found the GET URL, borrowed some cookies from my Browser, and presto.
+
+Clearly, we have some tools that we need to utilize better (websites removed for some anonymity)`}
             textColor={"black"}
           />
         </Grid>
@@ -91,7 +110,7 @@ class Portfolio extends React.Component {
             title="Reverse Engineering undocumented modbus platform"
             skills="API, Data Analysis, Python"
             imgSrc={require("../images/modbus.png")}
-            content={<img src={require("../images/modbus.png")} />}
+            content=""
             textColor={"black"}
             imgFit={"scale-down"}
           />
@@ -101,7 +120,7 @@ class Portfolio extends React.Component {
             title="Systems Integration for Smart-Van Build"
             skills="Python, API, Data Analytics, Camtasia"
             imgSrc={""}
-            content={<img src={require("../images/tensorflow_lite.png")} />}
+            content=""
             textColor={"black"}
           />
         </Grid>
@@ -110,7 +129,7 @@ class Portfolio extends React.Component {
             title="Van Build!"
             skills="Fun"
             imgSrc={require("../images/van.jpg")}
-            content={<img src={require("../images/tensorflow_lite.png")} />}
+            content=""
             textColor={"black"}
           />
         </Grid>
@@ -119,7 +138,7 @@ class Portfolio extends React.Component {
             title="Managing G-Suite via GAM and Google AppScript"
             skills="Javascript, Systems Admin"
             imgSrc={require("../images/gsuite.jpg")}
-            content={<img src={require("../images/tensorflow_lite.png")} />}
+            content=""
             textColor={"black"}
           />
         </Grid>
