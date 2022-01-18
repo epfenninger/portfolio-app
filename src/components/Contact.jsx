@@ -24,14 +24,11 @@ const Contact = () => {
       [name]: value,
     });
   };
-  const handleSliderChange = (name) => (e, value) => {
-    setFormValues({
-      ...formValues,
-      [name]: value,
-    });
-  };
+
   const handleSubmit = (event) => {
     event.preventDefault();
+    console.log(event);
+    handleClickOpen();
 
     fetch(REACT_APP_HA_WEBHOOK, {
       method: "POST",
@@ -106,12 +103,7 @@ const Contact = () => {
           />
         </Grid>
         <Grid item>
-          <Button
-            variant="contained"
-            color="primary"
-            type="submit"
-            onClick={handleClickOpen}
-          >
+          <Button variant="contained" color="primary" type="submit">
             Submit
           </Button>
           <Dialog
