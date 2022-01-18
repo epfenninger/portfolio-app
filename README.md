@@ -1,3 +1,4 @@
 # portfolio-app
- This is my portfolio website. Still in rough shape as I'm in the process of learning react. Feel free to use/borrow what you need! (Attributions are nice though)
-Clearly it isn't up and running yet if you were sent here from my website. Working on it!
+When I found out a portfolio needed to be a part of my application process, I knew that I was going to build the site from scratch. It is just who I am. Also - despite having a fair amount of experience with Python and Java, I had very little experience with frontend coding and this was a great chance to fix that.
+
+I started teaching myself React on December 27th, 2021, and made my first Commit for this site a few days later. I'm definitely no front-end developer, but I believe in at least understanding what is going on in everything I use and do. 
