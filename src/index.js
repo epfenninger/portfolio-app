@@ -44,7 +44,7 @@ const SectionWipesStyled = styled.div`
     .skills {
       color: #ffffff;
       position: relative;
-      top: 2vh;
+      top: -5vh;
     }
   }
 
