@@ -34,16 +34,17 @@ const SectionWipesStyled = styled.div`
 
   .panel.home {
     height: 40vh;
+    min-height: 325px;
   }
 
   .panel.tilegrid {
     height: 70vh;
+    min-height: 500px;
 
     .skills {
-      position: absolute;
       color: #ffffff;
-      z-index: 1;
-      bottom: -0.8vh;
+      position: relative;
+      top: 2vh;
     }
   }
 
@@ -55,6 +56,7 @@ const SectionWipesStyled = styled.div`
     justify-content: center;
     align-items: center;
     font-weight: bold;
+    min-height: 1000px;
 
     .select {
       display: flex;
