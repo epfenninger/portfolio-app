@@ -91,6 +91,7 @@ class TileGrid extends React.Component {
                 justifyContent: "center",
                 marginLeft: "auto",
                 marginRight: "auto",
+                minHeight: "200px",
               }}
             >
               <CardContent>

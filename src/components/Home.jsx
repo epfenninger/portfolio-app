@@ -60,6 +60,7 @@ const Home = () => (
           objectFit: "cover",
           marginLeft: "auto",
           marginRight: "auto",
+          minHeight: "400px",
         }}
         component="img"
         image={require("../images/backgroundhomecomputer.png")}
