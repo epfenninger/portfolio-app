@@ -82,7 +82,7 @@ class Experience extends React.Component {
             </Select>
           </FormControl>
         </div>
-        {this.state.data}
+        <div style={{ padding: "0 0 20em 5em" }}>{this.state.data}</div>
       </div>
     );
   }

@@ -43,9 +43,6 @@ const styles = {
 const words = [
   "an integration engineer.",
   "a data analyst.",
-  "a system admin.",
-  "an instructional designer",
-  "a LMS manager.",
   "a developer.",
   "a problem solver.",
 ];

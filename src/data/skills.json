@@ -48,18 +48,6 @@
     "para2": "Check out Google Apps Script item in portfolios"
   },
   {
-    "cardId": "LMS",
-    "title": "Learning Management Systems",
-    "para1": "I've used multiple Learning Management Systems (in education these are also tied to a Student Information System) and have leveraged my ability with APIs, Data Analytics, and scripting to give insight into student learning, perform rostering, and automatically integrate third party systems. ",
-    "para2": ""
-  },
-  {
-    "cardId": "L+D",
-    "title": "Learning and Development / Instructional Design",
-    "para1": "I have been responsible for all technical L&D for the past five years, and started getting into the role while working in IT. These responsibilities have seen me performing regular microtrainings, building eLearning curricula for employee technical upskilling, and doing live trainings on complicated technical concepts. Additionally my experience teaching students as young as fifth grade how to program has taught me how to take very technical concepts and convey them through multiple methods.",
-    "para2": "I have experience with Bloom, Kirkpatrick, and other learning Taxonomies and use tools like Camtasia regularly to deliver them. Check out my portfolio for L&D items."
-  },
-  {
     "cardId": "DataAnalytics",
     "title": "Data Analytics / Data Engineering",
     "para1": "I had to take a break from the Google Data Analytics certificate to finish this portfolio, but should be able to finish it quickly once I resume. Data Analytics has been at the core of what I do. I got into L&D after realizing that a significant number of my IT support tickets could be resolved through the availability of employee training. After I moved into an L&D role full time, I've used data to identify hole in institutional knowledge and where upskilling will help achieve organizational goals.",
@@ -72,34 +60,10 @@
     "para2": ""
   },
   {
-    "cardId": "Camtasia",
-    "title": "Camtasia",
-    "para1": "I use both Camtasia and Screenflow to perform microtrainings, educational videos, and build parts of eLearning curricula. I'll often throw a Gif in an email or set of instructions to emphasize a step and make directions easier to follow.",
-    "para2": "Check out the quick microlearning I made on how to integrate Google Domains with a Google Portfolio Site!"
-  },
-  {
     "cardId": "Project Management",
     "title": "Project Management",
     "para1": "I have the Google Project Management Professional Certificate (check out certificates below) and have been using Agile in both my Educational practices and while helping our IT department.",
     "para2": "After Covid, we had a complete turnover in our IT department and I stepped in to train the new department in our resources and provide mentoring in their application."
-  },
-  {
-    "cardId": "Google",
-    "title": "G-Suite Management / Skills",
-    "para1": "I currently help administer our G-Suite workspace and am well versed in all parts of administration and implementation. I've also built out a large set of scripts using GAM to automate services (like reporting) and integrate G-Suite into our various systems.",
-    "para2": ""
-  },
-  {
-    "cardId": "OSX",
-    "title": "OSX / iOS Management",
-    "para1": "I have implemented OSX/iOS MDM in two different institutions, and currently do all administration of profiles. Where our MDM falls short, I've used Bash to allow for touchless deployments and complete customization.",
-    "para2": ""
-  },
-  {
-    "cardId": "Windows",
-    "title": "Windows Management",
-    "para1": "I have administered and migrated Active Directory installs, and integrated them with our MDM and Open Directory solutions to encompass our entire fleet of systems. I have a working knowldge of Powershell to help our deployment.",
-    "para2": ""
   },
   {
     "cardId": "Me",

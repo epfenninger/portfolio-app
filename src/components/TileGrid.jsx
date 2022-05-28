@@ -166,20 +166,6 @@ class TileGrid extends React.Component {
           </Grid>
           <Grid item xs={2}>
             <MyTile
-              img={require("../images/LMS.png")}
-              altText="LMS"
-              clickHandler={this.handleClick}
-            ></MyTile>
-          </Grid>
-          <Grid item xs={2}>
-            <MyTile
-              img={require("../images/ld.png")}
-              altText="L+D"
-              clickHandler={this.handleClick}
-            ></MyTile>
-          </Grid>
-          <Grid item xs={2}>
-            <MyTile
               img={require("../images/da.png")}
               altText="DataAnalytics"
               clickHandler={this.handleClick}
@@ -194,36 +180,8 @@ class TileGrid extends React.Component {
           </Grid>
           <Grid item xs={2}>
             <MyTile
-              img={require("../images/camtasia.png")}
-              altText="Camtasia"
-              clickHandler={this.handleClick}
-            ></MyTile>
-          </Grid>
-          <Grid item xs={2}>
-            <MyTile
               img={require("../images/project.png")}
               altText="Project Management"
-              clickHandler={this.handleClick}
-            ></MyTile>
-          </Grid>
-          <Grid item xs={2}>
-            <MyTile
-              img={require("../images/google.png")}
-              altText="Google"
-              clickHandler={this.handleClick}
-            ></MyTile>
-          </Grid>
-          <Grid item xs={2}>
-            <MyTile
-              img={require("../images/osx.png")}
-              altText="OSX"
-              clickHandler={this.handleClick}
-            ></MyTile>
-          </Grid>
-          <Grid item xs={2}>
-            <MyTile
-              img={require("../images/windows.png")}
-              altText="Windows"
               clickHandler={this.handleClick}
             ></MyTile>
           </Grid>

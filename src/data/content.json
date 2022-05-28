@@ -1,5 +1,16 @@
 [
   {
+    "type": "experience",
+    "date": 2022,
+    "title": "ZoomInfo - Integration Engineer",
+    "header": "February 2022 - Present",
+    "mainContent": "Client Integrations Engineer focusing on implementing web and CRM based products to improve sales and automate processes. Utilizing my experience in ReactJS, I’ve built internal tools to allow the Integrations team to test implementations and troubleshoot prior to going live",
+    "subContentHeader": "Achievements:",
+    "subContent": "Constructed internal testing site in ReactJS with connections to prominent 3rd party integrations to allow team to test implementations,Assisted with troubleshooting web and backend implementation issues by leveraging my experience in Frontend design and programming experience.",
+    "altText": "ZoomInfo",
+    "imgSrc": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FZoomInformation%2F&psig=AOvVaw1CN1ANm3JrC4n3dmlHpJ04&ust=1653822201837000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCOCFmfqFgvgCFQAAAAAdAAAAABAD"
+  },
+  {
     "type": "education",
     "date": 2022,
     "title": "M.Ed in Educational Technology and Curriculum Design",
@@ -25,7 +36,7 @@
     "type": "experience",
     "date": 2019,
     "title": "Alton Central School - Technology Integrationist",
-    "header": "June 2019 - Present",
+    "header": "June 2019 - February 2022",
     "mainContent": "Technology Integrationist and Computer Science teacher for Alton Central School. Responsible for all technology professional development and administration of online resources.",
     "subContentHeader": "Achievements:",
     "subContent": "Organized and led both microlearning and in-depth trainings based on best-practice learning taxonomies,Designed eLearning professional development curriculum,Collaborated with teaching faculty to better understand technology needs,Produced data on platform usage to better target future training,Coordinated with IT to identify, test, and deploy cost efficient classroom technology,Developed an automated ePortfolio system utilizing the Google Apps API and Google Cloud Platform, and built an analytical suite to gauge student participation,Facilitated administrative engagement with technology tools through the use of APIs and automation",
